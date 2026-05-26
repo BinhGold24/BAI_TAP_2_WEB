@@ -1,0 +1,14 @@
+﻿@* Khai báo kiểu dữ liệu của Model mà View này sẽ nhận (ở đây là kiểu string) *@
+@model string
+
+@{
+    ViewData["Title"] = "Student Info";
+}
+
+<div class="mt-5 text-center">
+    <h3>Tên: @ViewBag.Name</h3>
+
+    <h3>Tuổi: @ViewData["Age"]</h3>
+
+    <h3>Ngành: @Model</h3>
+</div>
